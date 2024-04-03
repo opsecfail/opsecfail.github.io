@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    font-size: 13px;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     height: fit-content;
