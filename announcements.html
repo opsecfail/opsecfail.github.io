@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <title>announcements</title>
+    <meta name="description" content="this is the announcements page where I shall send anything relevant to the reader">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/announcements.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <span>A</span>
+            <span>N</span>
+            <span>N</span>
+            <span>O</span>
+            <span>U</span>
+            <span>N</span>
+            <span>C</span>
+            <span>E</span>
+            <span>M</span>
+            <span>E</span>
+            <span>N</span>
+            <span>T</span>
+            <span>S</span>
+        </div>
+
+        <div class="chain"></div>
+
+        <div class="announcements">
+
+        </div>
+        <script>
+            // Function to fetch and display announcements from JSON
+            function displayAnnouncements() {
+                fetch('storage/other/announcements.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const announcementsDiv = document.querySelector('.announcements');
+                        announcementsDiv.innerHTML = ''; // Clear previous announcements
+                        data.forEach((announcement, index) => {
+                            const announcementDiv = document.createElement('div');
+                            announcementDiv.classList.add('announcement');
+                            announcementDiv.textContent = announcement.announcement;
+                            announcementsDiv.appendChild(announcementDiv);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching announcements:', error));
+            }
+        
+            // Display announcements initially
+            displayAnnouncements();
+        
+            // Update announcements every 60 seconds (if new ones are added)
+            setInterval(displayAnnouncements, 60000); // Adjust interval as needed
+        </script>
+    </div>
+</body>
+</html>

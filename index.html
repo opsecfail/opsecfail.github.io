@@ -1,0 +1,104 @@
+<!--ahh, shit here we go again, coded from scratch:18:04 14/3/2024-->
+<!--Thanks to my brain, chatgpt, ma parents, and those who shared this site-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OSF</title>
+        <meta name="description" content="OSP(OpSecFailure) is a site that lists how individuals messed up their opsec, no personal info is shared on this site.">
+        <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+        <meta property="og:description" content="OSP(OpSecFailure) is a site that lists how individuals messed up their opsec, no personal info is shared on this site.">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <link rel="canonical" href="">
+        <!--links to css/js files-->
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="javascript/index.js"></script>
+        <!--end-->
+    </head>
+<body>
+    <div class="container">
+
+        <!--div for the header and music bars-->
+        <div class="header">
+            <div class="title">
+                <div class="logo">
+                    <img src="images/icons/logo.png">
+                </div>
+                <div class="title_name">
+                    <h1>~$ OPSEC FAILURES</h1>
+                </div>
+            </div>
+
+            <div class="music_bar">
+                <div id="gif-container">
+                    <img id="gif" src="images/statics/gif6.gif">
+                </div>
+                <div id="controls">
+                    <div class="fix">
+                        <div class="button_row">
+                            <button id="play-btn">PLAY</button>
+                             <button id="pause-btn">PAUSE</button>
+                        </div>
+                        <div class="button_row">
+                            <button id="prev-btn">PREVIOUS</button>
+                            <button id="next-btn">NEXT</button>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/U36j6zUDrk" target="_blank ">
+                        <div class="discord">
+                            <img src="images/statics/discord.gif">
+                        </div>
+                    </a>
+                </div> 
+                <audio id="audio" src="storage/music/musicOne.mp3"></audio>
+            </div>
+        </div>
+        <!--end-->
+
+
+        <!--div for the headline-->
+        <div class="headlines">
+            <p id="headlines"></p>
+        </div>
+        <script src="javascript/headlines.js"></script>
+        <!--end-->
+
+
+        <!--div for the profiles-->
+        <div class="content">
+                <script src="javascript/profiles.js"></script>
+                <div id="profiles"></div>
+        </div>
+        <!--end-->
+
+        <!--footer-->
+        <div class="footer">
+            <div class="adverts">
+                <a href="https://bugzorc.github.io/" target="_blank"><img src="images/webrings/bugzorcTag.gif"></a>
+                <a href="https://skullbunny.neocities.org/" target="_blank"><img src="images/webrings/skullcandyTag.gif"></a>
+                <img src="images/statics/osf.gif">
+            </div>
+            <div class="info"> 
+                <div class="nav">
+                    <div class="pages">
+                        <a href="announcements.html" target="_blank"><div style="text-align: center; border: 2px solid #11a002;"><p>ANNOUNCEMENTS</p></div></a>
+                        <div style="text-align: center; border: 2px solid #11a002;"><p>STATISTICS</p></div>
+                        <a href="contribute.html" target="_blank"><div style="text-align: center; border: 2px solid #11a002;"><p>CONTRIBUTE</P></div></a>
+                    </div>
+                    <div class="contactMe">
+                        <div><p>Contact Me:</p></div>
+                        <div style="display: flex; align-items: center;"><a href="https://twitter.com/bugzorc" target="_blank"><img src="images/icons/twitter.png"></a></div>
+                        <div style="display: flex; align-items: center;"><a href="https://t.me/bugzorc" target="_blank"><img src="images/icons/telegram.png"></a></div>
+                    </div>
+                </div>
+                <div class="anime"><img src="images/statics/animedance.gif"></div>
+            </div>
+        </div>
+        <!--end-->
+    <script src="javascript/music.js"></script>
+    </div>
+</body>
+</html>

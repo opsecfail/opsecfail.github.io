@@ -1,0 +1,74 @@
+/*css for the header*/
+.header {
+    border: 2px solid #11a002;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 70px;
+    text-decoration: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header > span {
+    font-weight: bold;
+    font-family: 'prstart';
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+    0%, 100% {
+      color: #FFF;
+      text-shadow: 0 0 10px #11a002, 0 0 50px #11a002, 0 0 100px #11a002;
+}   
+10%, 90% {
+      color: #111;
+      text-shadow: none;
+}
+} 
+.header> span:nth-child(2) {
+    animation-delay: 0.25s;
+}  
+.header > span:nth-child(3) {
+    animation-delay: 0.5s;
+} 
+.header> span:nth-child(4) {
+    animation-delay: 0.75s;
+} 
+.header> span:nth-child(5) {
+    animation-delay: 1s;
+} 
+.header > span:nth-child(6) {
+    animation-delay: 1.25s;
+} 
+.header > span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+/*end*/
+/*css for chain*/
+.chain {
+    width: 70%;
+    border-right: 4px  dotted #11a002;
+    border-left: 4px  dotted #11a002;
+    height: 70px;
+}
+/*end*/
+/*css for the message*/
+.contribute {
+    border: 2px solid #11a002;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    height: fit-content;
+}
+/*end*/
+/*format*/
+.format {
+    border: 2px solid #11a002;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+.fix p{
+    height: fit-content;
+}
+/*end*/
