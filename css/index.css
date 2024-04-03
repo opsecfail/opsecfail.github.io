@@ -1,0 +1,228 @@
+profile-link {
+    height: fit-content;
+    width: fit-content;
+}
+
+/*css for all div requring dotted border*/
+.header, .title, .music_bar {
+    border-color: #1aff00;
+    border-style: solid;
+    margin: 10px;
+}
+/*end*/
+
+/*all content in the header div, logo, header, music bar*/
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.logo img{
+    height: 150px;
+}
+.title_name {
+    display: flex;
+    font-family: 'prstart';
+    justify-content: center; 
+    align-items: center; 
+}
+h1 {
+    margin: 0;
+}
+.music_bar {
+    display: flex;
+    flex-direction: column;
+}
+#gif-container img{
+    height: 90px;
+    width: 100%;
+}
+#controls {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.button_row {
+    display: flex;
+    flex-direction: column;
+}
+.discord {
+    display: flex;
+    justify-content: center;
+}
+.discord img{
+    border: 1px solid #0475b6;
+    height: 62px;
+    width: 100px;
+}
+.discord  {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/*end*/
+
+/*css for headlines*/
+.headlines {
+    font-family: 'generesis';
+    overflow: hidden;
+    white-space: nowrap;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+.headlines p {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*end*/
+
+/*css for the profile everything in it basically*/
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #11a002; /* Green border */
+    border-radius: 2px; 
+    height: 390px;
+    width: 210px;
+    margin: 5px;
+}
+#profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /
+}
+#profiles > * {
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+.pfp {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 2px solid #11a002;
+    margin: 5px;
+}    
+.pfp img {
+    margin: 7px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+.nickname, .details, .poster, .OSF {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.OSF, .checked{
+    border: 2px solid #11a002;
+    margin: 5px;
+}
+.details p{
+    margin: 0;
+    width: 90%;
+}
+.details {
+    height: 64px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+.checked {
+    display: flex;
+    justify-content: center;
+}
+/*end*/
+
+/*css for footer*/
+.footer {
+    width: 100%;
+    border: 2px solid #11a002;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.adverts {
+    width: 64%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.adverts img{
+    height: 45px;
+    margin: 9px;
+}
+.info {
+    display: flex;
+    flex-direction: rows;
+    margin: 5px;
+}
+.anime{
+    border: 2px solid #11a002;
+    margin-left: 7px;
+}
+.other {
+    border: 2px solid #11a002;
+}
+.anime img {
+    height: 120px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+.pages {
+    display: flex;
+    flex-direction: column;
+}
+.pages p{
+    margin: 0;
+}
+.pages div{
+    margin: 4px;
+}
+.contactMe {
+    display: flex;
+    flex-direction: row;
+}
+.contactMe img{
+    height: 19px;
+    margin-left: 3px;
+}
+/*end*/
+
+/*just fixes to make things work right*/
+.fix {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*end*/
