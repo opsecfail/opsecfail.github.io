@@ -80,3 +80,31 @@ button:hover::before {
     height: 0;
     opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        display: none;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    #gif-container {
+        display: none;
+    }
+    .header {
+        flex-direction: column !important;
+    }
+    .title {
+        border: none !important;
+        width: fit-content;
+    }
+    .title_name {
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important; 
+    }
+    .discord img {
+        width: 120px !important;
+    }
+
+}
