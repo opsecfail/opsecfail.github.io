@@ -97,7 +97,7 @@ button:hover::before {
     }
     .title {
         border: none !important;
-        width: fit-content;
+        width: fit-content !important;
     }
     .title_name {
         word-wrap: break-word !important;
