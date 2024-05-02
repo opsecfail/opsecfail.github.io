@@ -1,6 +1,12 @@
 [
     {
-        "announcement": "slangs removed, posts are now more summarising, block have been broken down to paragraphs"
+        "announcement" : "removed javascript for loading the profiles, html more faster I guess, but still works the same way"
+    },
+    {
+        "announcement": "many ask me why I write about opsec failures, while I don't care about mine? am a law abiding citizen :))"  
+    },
+    {
+        "announcement": "slangs removed, posts are now more summarising, blocks have been broken down to paragraphs"
     },
     {
         "announcement": "If you don't understand the accro names, check /accro.html"
