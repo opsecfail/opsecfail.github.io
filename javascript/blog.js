@@ -11,7 +11,7 @@ if (!jsonFilePath) {
         .then(data => {
             // Set document title
             document.title = data.nickname;
-
+            
             // Replace elements with data from JSON
             document.querySelector('.pfp img').src = data.pfp;
             document.querySelectorAll('.details')[0].textContent = data.nickname;
@@ -28,6 +28,11 @@ if (!jsonFilePath) {
                 linksContainer.appendChild(linkElement);
                 linksContainer.appendChild(document.createElement('br'));
             });
+
+            // Set posterLink
+            const posterLinkElement = document.querySelector('.posterLink');
+            posterLinkElement.href = data.posterLink;
+            posterLinkElement.querySelector('.details').textContent = "Poster Link"; // You can modify this text as needed
         })
         .catch(error => console.error('Error fetching JSON:', error));
 }
