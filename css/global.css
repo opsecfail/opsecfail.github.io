@@ -20,12 +20,12 @@
 }
 
 @font-face {
-    font-family: 'cascadia';
-    src: url('../fonts/Cascadia.ttf') format('truetype');
+    font-family: 'modenine';
+    src: url('../fonts/Modenine-2OPd.ttf') format('truetype');
 }
 /*end*/
 body {
-    font-family: 'cascadia';
+    font-family: 'modenine';
     background-color: #000000;
     display: flex;
     align-content: center;
