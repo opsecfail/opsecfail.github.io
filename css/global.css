@@ -20,12 +20,12 @@
 }
 
 @font-face {
-    font-family: 'steelfish.rg-regular';
-    src: url('../fonts/Modenine-2OPd.ttf') format('truetype');
+    font-family: 'Cascadia';
+    src: url('../fonts/CascadiaMono-Bold.otf') format('opentype');
 }
 /*end*/
 body {
-    font-family: 'cooper';
+    font-family: 'Cascadia';
     background-color: #000000;
     display: flex;
     align-content: center;
