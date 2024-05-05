@@ -20,12 +20,12 @@
 }
 
 @font-face {
-    font-family: 'mono';
-    src: url('../fonts/CascadiaMono-BoldItalic.otf') format('opentype');
+    font-family: 'cascadia';
+    src: url('../fonts/Cascadia.ttf') format('truetype');
 }
 /*end*/
 body {
-    font-family: 'mono';
+    font-family: 'cascadia';
     background-color: #000000;
     display: flex;
     align-content: center;
