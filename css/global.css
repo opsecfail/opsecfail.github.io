@@ -18,6 +18,11 @@
     font-family: 'cooper'; 
     src: url('../fonts/cooper-hewitt.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'mono';
+    src: url('../fonts/CascadiaMono-BoldItalic.otf') format('opentype');
+}
 /*end*/
 body {
     font-family: 'cooper';
