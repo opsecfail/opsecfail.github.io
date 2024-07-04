@@ -1,0 +1,13 @@
+.container {
+    justify-content: center;
+    align-items: center !important;
+    overflow: hidden;
+}
+.table {
+    width: fit-content;
+    color: rgb(102, 255, 0);
+}
+.table td {
+    padding: 10px; /* Optional: Add padding to cells */
+    text-align: center; /* Optional: Center align text in cells */
+}

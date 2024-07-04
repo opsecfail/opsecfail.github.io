@@ -1,0 +1,320 @@
+/*add border-color*/
+.header, .MSG4USERS, .table_header, .table_content, .post, .OSF, .verified, .unverfied {
+    border: 1px solid #008000;
+}
+/*end*/
+/*css for header and music bar*/
+.header {
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    height: 100%;
+    width: 120px;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.titleName_statics {
+    font-family: 'prstart';
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.statistics {
+    display: flex;
+    flex-direction: row;
+}
+.site_name {
+    height: 60%;
+    overflow: hidden;
+}
+.statIcon {
+    margin: 0 9px 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.statIcon img{
+    height: 20px;
+}
+.statIcon p{
+    margin: 0 0 1px;
+}
+.MSG4USERS {
+    font-family: 'aqua';
+    margin: 0 9px 9px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.MSG4USERS img{
+    height: 20px;
+}
+.MSG4USERS p{
+    margin: 0 0 1px;
+}
+.alert_logo {
+    display: flex;
+    align-items: flex-end;
+}
+#post_amount {
+    color: #d8b90b;
+}
+
+.anonbanner {
+    height: 100%;
+}
+.anonbanner img {
+    height: 100%;
+}
+
+/*end*/
+/*css headlines*/
+.headlines {
+    background-color: transparent;
+    color: #d8b90b;
+    white-space: nowrap;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+.headlines p {
+    margin: 2px;
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+    
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*end*/
+/*posts and table*/
+.posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
+    width: fit-content;
+    gap: 5px;
+    overflow-y: auto;
+    padding-bottom: 5px;
+}
+.posts a{
+    text-decoration: none;
+    color: inherit;
+    height: fit-content;
+}
+.post {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    justify-content: space-between !important;
+}
+.post div{
+    width: 92%;
+    display: flex;
+    justify-content: center;
+}
+.pfp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pfp img {
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    border: 3px solid #008000;
+}
+.nickname p{
+    margin-bottom: 0;
+}
+.details {
+    height: 48px;
+}
+.details p{
+    font-size: 13px;
+    margin: 6px;
+}
+.osf_color {
+    color: #d8b90b;
+}
+.verified {
+    background-color: #03ff4f27;
+}
+.verified p{
+    margin: 3px;
+}
+.unverified {
+    background-color: #ff03031c;
+}
+.unverified p{
+    margin: 3px;
+}
+.table {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.tables {
+    min-width: 240px;
+    max-width: 240px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: transparent;
+}
+.table_header {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.table_header h4{
+    margin-top: 3px !important;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+}
+.table_content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.table_content p{
+    margin: 0;
+}
+.table_content img{
+   width: 48%;
+}
+.video-container {
+    border: 1px solid #008000;
+    position: relative;
+    /* Adjust height as needed */
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width * 100) */
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.poster_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4px;
+    max-height: 100%;
+    border-color: 1px 1px 0px solid #008000 ;
+    background: #004000;
+    font-weight: bold;
+}
+.poster_row p{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    background: #004000;
+    font-weight: bold;
+}
+.rank p{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.rank {
+    margin: 2px;
+    padding-left: 10px;
+    padding-right: 10px ;
+    color: black;
+    background-color: #d8b90b;
+    border-radius: 3px;
+}
+.rank1, .rank2, .rank3 {
+    margin: 2px;
+    padding-left: 10px;
+    padding-right: 10px ;
+    color: black;
+    border-radius: 3px;
+}
+.rank1 {
+    background-color: #7506f5;
+}
+.rank2 {
+    background-color: #0e30f0;
+}
+.rank3 {
+    background-color: #f57003;
+}
+.post_amt {
+    margin-right: 10px;
+}
+.announcement {
+    border-bottom: 1px solid #008000; 
+}
+.announcement_column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+/*end*/
+/*fix*/
+.fix {
+    display: flex;
+    align-items: flex-end;
+}
+.fix p{
+    margin: 0;
+    height: 17px;
+}
+/*end*/
+/*css for mobile, ahh shit here we go again*/
+@media only screen and (max-width: 967px) {
+
+/*divs to be removed*/
+.logo, .anonbanner, .tables, .statistics{
+    display: none;
+}
+/*end*/
+.posts {
+    justify-content: center;
+}
+.site_name {
+    overflow: visible;
+}
+}

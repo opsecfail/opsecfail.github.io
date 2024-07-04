@@ -1,286 +1,451 @@
-<!--ahh, shit here we go again, coded from scratch:18:04 14/3/2024-->
-<!--Thanks to my brain, chatgpt, ma parents, and those who shared this site-->
 <!DOCTYPE html>
+<!--V2 recoded from scratch: 5/31/2024, goodbye infosec-->
 <html lang="en">
-    <head>
-       
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OSF</title>
-        <meta name="description" content="OSP(OpSecFailure) is a site that lists how individuals messed up their opsec, no personal info is shared on this site.">
-        <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
-        <meta property="og:description" content="OSP(OpSecFailure) is a site that lists how individuals messed up their opsec, no personal info is shared on this site.">
-        <meta property="og:image" content="">
-        <meta property="og:url" content="">
-        <link rel="canonical" href="">
-        <!--links to css/js files-->
-        <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/index.css">
-        <script src="javascript/index.js"></script>
-        <!--end-->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <title>~/OSF</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <script src="javascript/title.js"></script>
+    <script src="javascript/blink.js"></script>
+    <script src="javascript/headlines.js"></script>
+</head>
 <body>
+    <!--Idk why am starting to having feelings for this girl miles away, she a 2, focus bugzorc, FOCUS 2:54AM 6/26/2024-->
     <div class="container">
-
-        <!--div for the header and music bars-->
+        <!--html for the header-->
         <div class="header">
             <div class="title">
                 <div class="logo">
                     <img src="images/icons/logo.png">
                 </div>
-                <div class="title_name">
-                    <h1>~$ OPSEC FAILURES</h1>
-                </div>
-            </div>
-
-            <div class="music_bar">
-                <div id="gif-container">
-                    <img id="gif" src="images/statics/gif6.gif">
-                </div>
-                <div id="controls">
-                    <div class="fix">
-                        <div class="button_row">
-                            <button id="play-btn">PLAY</button>
-                             <button id="pause-btn">PAUSE</button>
+                <div class="titleName_statics">
+                    <div class="site_name">
+                      <h1>~$ OPSEC FAILURES 2 <span id="blink">_</span></h1>  
+                    </div>
+                    <div class="statistics">
+                        <div class="statIcon">
+                            <div><img src="images/icons/posts.ico" alt="No image? Contact me ASAP!"></div>
+                            <div>
+                                <p id="post_amount">15</p>
+                            </div>
                         </div>
-                        <div class="button_row">
-                            <button id="prev-btn">PREVIOUS</button>
-                            <button id="next-btn">NEXT</button>
+                        <div class="statIcon">
+                            <a href="https://x.com/bugzorc" target="_blank"><img src="images/icons/twitter.ico" alt="No image? Contact me ASAP!"></a>
+                        </div>
+                        <div class="statIcon">
+                            <a href="https://t.me/bugzorc" target="_blank"><img src="images/icons/telegram.ico" alt="No image? Contact me ASAP!"></a>
+                        </div>
+                        <div class="statIcon">
+                            <a href="https://discord.gg/NR29BGtFpJ" target="_blank"><img src="images/icons/discord.ico" alt="No image? Contact me ASAP!"></a>
+                        </div>
+                        <div class="MSG4USERS">
+                            <div class="alert_logo"><img src="images/icons/alert.ico" alt="No image? Contact me ASAP!"></div>
+                            <a href="announcements.html" target="_blank">
+                            <div class="fix">
+                                <p>MSG FROM ADMIN</p>
+                            </div>
+                            </a>
                         </div>
                     </div>
-                    <a href="https://discord.gg/U36j6zUDrk" target="_blank ">
-                        <div class="discord">
-                            <img src="images/statics/discord.gif">
-                        </div>
-                    </a>
-                </div> 
-                <audio id="audio" src="storage/music/musicOne.mp3"></audio>
+                </div>
             </div>
+
+            <div class="anonbanner">
+                <img src="images/static/anonbanner.png">
+            </div>   
         </div>
-        <!--end-->
-
-
+        <!--end html for the header-->
         <!--div for the headline-->
         <div class="headlines">
             <p id="headlines"></p>
         </div>
-        <script src="javascript/headlines.js"></script>
         <!--end-->
+        <!--posts & table-->
+        <div class="table">
+            <div class="posts">
 
+                <a href="blog.html?filecase=track2" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/roman.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Track2</p></div>
+                        </div>
+                        <div class="details">
+                            <p>a Russian hacker whose arrest is filled with drama</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">UGE, IP, MI</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=garymckinnon" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/gary.jpg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>SOLO</p></div>
+                        </div>
+                        <div class="details">
+                            <p>conducted the biggest military hack</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">IPL</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=paulabroadwell" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/paula.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Paula Broadwell</p></div>
+                        </div>
+                        <div class="details">
+                            <p>first female on this site</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y, ACC, CC, IPL, UGE, D, PO, POSF, PNL</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=variousapts" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/apts.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>OSF of APTs</p></div>
+                        </div>
+                        <div class="details">
+                            <p>a talk about OSF of various APTs</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">ACC, UGE, PO, Y, POSF</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=jonathanpollard" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/pollard.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Jonathan Pollard</p></div>
+                        </div>
+                        <div class="details">
+                            <p>former USA intel analyst, charged for espionage</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">ACC, Y</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=alpha02" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/cazes.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>ALPHA02</p></div>
+                        </div>
+                        <div class="details">
+                            <p>administrator of biggest online drugs market</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">PO, ACC, Y</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=d3f4ult" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/cracka.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>D3F4ULT</p></div>
+                        </div>
+                        <div class="details">
+                            <p>the picture above is his friend "crack"</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                 <a href="blog.html?filecase=eldokim" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/eldo.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Eldo Kim</p></div>
+                        </div>
+                        <div class="details">
+                            <p>made false bomb threats to postone exams</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">up to you 2 judge</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=adrianlamo" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/adrian.png" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Adrian Lamo</p></div>
+                        </div>
+                        <div class="details">
+                            <p>the homeless hacker, self proclaimed ethical hacker</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">D, CC, ACC, PO, Y</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=kingchilli" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/albert.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>King Chilli</p></div>
+                        </div>
+                        <div class="details">
+                            <p>reselled more than 179 million cards</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y, ACC, D, PO</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=jeremyhammond" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/jeremy.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Jeremy Hammond</p></div>
+                        </div>
+                        <div class="details">
+                            <p>founder of the OG site, hackthissite</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">POSF</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=destroyer2009" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/timoxa.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Destroyer2009</p></div>
+                        </div>
+                        <div class="details">
+                            <p>also known as timoxa, a game cheat coder</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">ACC, Y, PO</span></p>
+                        </div>
+                        <div class="unverified">
+                            <p>UNVERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=rossulbricht" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/ross.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Pirate Roberts</p></div>
+                        </div>
+                        <div class="details">
+                            <p>founder of Silk Road, imprisoned livertarian</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">N/A</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=southafricagov" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/sa.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>SA Government</p></div>
+                        </div>
+                        <div class="details">
+                            <p>opsec failures of the south africa government</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">IPL, PO, Pl</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=w0rmer" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/w0rmer.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>w0rmer</p></div>
+                        </div>
+                        <div class="details">
+                            <p>hacked into new york police department back in 2012</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">PO</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=pompompurin" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/pompompurin.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>pompompurin</p></div>
+                        </div>
+                        <div class="details">
+                            <p>cybercrime forum administrator, involved in major data breaches</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y, IPL, ACC, UGE</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                 <a href="blog.html?filecase=zeekill" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/zeekill.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>zeekill</p></div>
+                        </div>
+                        <div class="details">
+                            <p>blud finally got arrested in 2024 lol</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y, ACC, CC</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=jinhyok" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/jin.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>Jin Hyok</p></div>
+                        </div>
+                        <div class="details">
+                            <p>a North Korean programmer and hacker</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">ACC, UGE</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=omnipotent" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/omnipotent.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>omnipotent</p></div>
+                        </div>
+                        <div class="details">
+                            <p>administrator of the infamous forum, raidforums</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y, D, DCA, ACC</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="blog.html?filecase=suspectAGB" target="_blank">
+                    <div class="post">
+                        <div class="pfp">
+                            <img src="images/victims/agb.jpeg" alt="No image? Contact me ASAP!">
+                            <div class="nickname"><p>suspectAGB</p></div>
+                        </div>
+                        <div class="details">
+                            <p>UK drill rapper who escaped to Kenya</p>
+                        </div>
+                        <div class="OSF">
+                            <p>OSF: <span class="osf_color">Y, CC, DCA</span></p>
+                        </div>
+                        <div class="verified">
+                            <p>VERIFIED</p>
+                        </div>
+                    </div>
+                </a>
+                
 
-        <!--div for the profiles-->
-        <div class="content">
-            <div id="profiles">
-                <a href="blog.html?json=storage/blogs/track2.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/roman.png"></div>
-            <div class="nickname"><p>Track2</p></div>
-            <div class="details"><p>a Russian hacker whose arrest is filled with drama</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p>UGE, IP, MI</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
             </div>
-        </div></a><a href="blog.html?json=storage/blogs/garymckinnon.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/gary.jpg"></div>
-            <div class="nickname"><p>SOLO</p></div>
-            <div class="details"><p>conducted the biggest military hack</p></div>
-            <div class="poster"><p>POSTER:</p><p>zestydpr</p></div>
-            <div class="OSF"><p>OSF:</p><p>IPL</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/paulabroadwell.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/paula.png"></div>
-            <div class="nickname"><p>Paula Broadwell</p></div>
-            <div class="details"><p>first female on site</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p>Y, ACC, CC, IPL, UGE, D, PO, POSF, PNL</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/variousapts.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/apts.png"></div>
-            <div class="nickname"><p>Various APTs</p></div>
-            <div class="details"><p>a talk about OSF of various APTs</p></div>
-            <div class="poster"><p>POSTER:</p><p>smoothimpact</p></div>
-            <div class="OSF"><p>OSF:</p><p>ACC, UGE, PO, Y, POSF</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/jonathanpollard.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/pollard.png"></div>
-            <div class="nickname"><p>Jonathan Pollard</p></div>
-            <div class="details"><p>former USA intel analyst, charged for espionage</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p>ACC, Y</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a>
-            <a href="blog.html?json=storage/blogs/alpha02.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/cazes.png"></div>
-            <div class="nickname"><p>ALPHA02</p></div>
-            <div class="details"><p>administrator of biggest online drug marktet</p></div>
-            <div class="poster"><p>POSTER:</p><p>tarballers</p></div>
-            <div class="OSF"><p>OSF:</p><p>PO, ACC, Y</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/d3f4ult.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/cracka.png"></div>
-            <div class="nickname"><p>D3F4ULT</p></div>
-            <div class="details"><p>the picture above is his friend "cracka"</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p>Y</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/eldokim.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/eldo.png"></div>
-            <div class="nickname"><p>ELDO KIM</p></div>
-            <div class="details"><p>made false bomb threats to postone exams</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p>N/A</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/adrianlamo.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/adrian.png"></div>
-            <div class="nickname"><p>ADRIAN LAMO</p></div>
-            <div class="details"><p>the homeless hacker, self proclaimed ethical hacker</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p> D, CC, ACC, PO, Y</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/kingchilli.json" class="profile-link" target="_blank"><div class="profile">
-            <div class="pfp"><img src="images/statics/albert.jpeg"></div>
-            <div class="nickname"><p>KING CHILLI</p></div>
-            <div class="details"><p>reselled more than 179 million cards</p></div>
-            <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-            <div class="OSF"><p>OSF:</p><p> Y, ACC, D, PO</p></div>
-            <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                <div class="verified"><p>VERIFIED</p></div>
-            </div>
-        </div></a><a href="blog.html?json=storage/blogs/jeremyhammond.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/jeremy.jpeg"></div>
-                <div class="nickname"><p>JEREMY HAMMOND</p></div>
-                <div class="details"><p>founder of the OG site, hackthissite</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>POSF</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
+            <div class="tables">
+                <div class="table_header"><h4>CONTRIBUTERS</h4></div>
+                <div class="table_content">
+                    <div class="poster_row">
+                        <div class="poster_name"><p><span class="rank1">1</span> BUGZORC</p></div>
+                        <div class="post_amt"><p>15</p></div>
+                    </div>
+                    <div class="poster_row">
+                        <div class="poster_name"><p><span class="rank2">2</span> SOUF6X</p></div>
+                        <div class="post_amt"><p>1</p></div>
+                    </div>
+                    <div class="poster_row">
+                        <div class="poster_name"><p><span class="rank3">3</span> FOILMAN</p></div>
+                        <div class="post_amt"><p>1</p></div>
+                    </div>
+                    <div class="poster_row">
+                        <div class="poster_name"><p><span class="rank">4</span> TARBALLERS</p></div>
+                        <div class="post_amt"><p>1</p></div>
+                    </div>
+                    <div class="poster_row">
+                        <div class="poster_name"><p><span class="rank">5</span> ZESTYDPR</p></div>
+                        <div class="post_amt"><p>1</p></div>
+                    </div>
                 </div>
-            </div></a><a href="blog.html?json=storage/blogs/destroyer2009.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/timoxa.jpeg"></div>
-                <div class="nickname"><p>DESTROYER2009</p></div>
-                <div class="details"><p>also known as timoxa,  a game cheat coder</p></div>
-                <div class="poster"><p>POSTER:</p><p>Foilman</p></div>
-                <div class="OSF"><p>OSF:</p><p>ACC, Y, PO</p></div>
-                <div class="checked" style="background-color: rgba(255, 3, 3, 0.12);">
-                    <div class="verified"><p>UNVERIFIED</p></div>
+                <div class="video-container">
+                   <!-- Paste the iframe code you copied from YouTube here -->
+                    <iframe src="https://www.youtube.com/embed/VFZVfGe-W5w" allowfullscreen></iframe>
                 </div>
-            </div></a><a href="blog.html?json=storage/blogs/rossulbricht.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/ross.jpeg"></div>
-                <div class="nickname"><p>PIRATE ROBERTS</p></div>
-                <div class="details"><p>Founder of Silk Road, imprisoned libertarian.</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>N/A</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
+                <a href="announcements.html" class="plain_a_tag" target="_blank"><div class="table_header"><h4>ANNOUNCEMENTS</h4></div></a>
+                <div class="table_content">
+                    <div class="announcement_column">
+                        <div class="announcement"><p>introducing OpsecFailures V.2: new theme, contributers board, minimize javascript usage, responsive css. For full info about the update <a href="announcements.html" target="_blank">click here</a></p></div>
+                    </div>    
                 </div>
-            </div></a><a href="blog.html?json=storage/blogs/southafricagov.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/sa.jpeg"></div>
-                <div class="nickname"><p>SA GOVERNMENT</p></div>
-                <div class="details"><p>opsec failures of the south africa government</p></div>
-                <div class="poster"><p>POSTER:</p><p>souf6x</p></div>
-                <div class="OSF"><p>OSF:</p><p>IPL, PO, PL</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a><a href="blog.html?json=storage/blogs/w0rmer.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/w0rmer.jpeg"></div>
-                <div class="nickname"><p>W0RMER</p></div>
-                <div class="details"><p>hacked into new york police department back in 2012</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>PO</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a><a href="blog.html?json=storage/blogs/pompompurin.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/pompompurin.jpeg"></div>
-                <div class="nickname"><p>POMPOMPURIN</p></div>
-                <div class="details"><p> cybercrime forum administrator, involved in major data breaches.</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>Y, IPL, ACC, UGE</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a><a href="blog.html?json=storage/blogs/zeekill.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/zeekill.jpeg"></div>
-                <div class="nickname"><p>ZEEKILL</p></div>
-                <div class="details"><p>finnish hacker, extortionist, and Lizard Squad member.</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>Y, ACC, CC</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a><a href="blog.html?json=storage/blogs/jinhyok.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/jin.jpeg"></div>
-                <div class="nickname"><p>JINHYOK</p></div>
-                <div class="details"><p> a North Korean programmer and hacker.</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>ACC, UGE</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a><a href="blog.html?json=storage/blogs/omnipotent.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/omnipotent.jpeg"></div>
-                <div class="nickname"><p>OMNIPOTENT</p></div>
-                <div class="details"><p>adminstrator of the infamous forum, raidforums</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>Y, D, DCA, ACC</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a><a href="blog.html?json=storage/blogs/suspectAGB.json" class="profile-link" target="_blank"><div class="profile">
-                <div class="pfp"><img src="images/statics/agb.jpeg"></div>
-                <div class="nickname"><p>suspectAGB</p></div>
-                <div class="details"><p>UK drill rapper who escaped to Kenya</p></div>
-                <div class="poster"><p>POSTER:</p><p>bugzorc</p></div>
-                <div class="OSF"><p>OSF:</p><p>Y, CC, DCA</p></div>
-                <div class="checked" style="background-color: rgba(18, 160, 2, 0.1);">
-                    <div class="verified"><p>VERIFIED</p></div>
-                </div>
-            </div></a></div>
         </div>
         <!--end-->
-
-        <!--footer-->
-        <div class="footer">
-            <div class="adverts">
-                <a href="https://bugzorc.github.io/" target="_blank"><img src="images/webrings/bugzorcTag.gif"></a>
-                <a href="https://skullbunny.neocities.org/" target="_blank"><img src="images/webrings/skullcandyTag.gif"></a>
-                <img src="images/statics/osf.gif">
-            </div>
-            <div class="info"> 
-                <div class="nav">
-                    <div class="pages">
-                        <a href="announcements.html" target="_blank"><div style="text-align: center; border: 2px solid #11a002;"><p>ANNOUNCEMENTS</p></div></a>
-                        <div style="text-align: center; border: 2px solid #11a002;"><p>STATISTICS</p></div>
-                        <a href="contribute.html" target="_blank"><div style="text-align: center; border: 2px solid #11a002;"><p>CONTRIBUTE</P></div></a>
-                    </div>
-                    <div class="contactMe">
-                        <div><p>Contact Me:</p></div>
-                        <div style="display: flex; align-items: center;"><a href="https://twitter.com/bugzorc" target="_blank"><img src="images/icons/twitter.png"></a></div>
-                        <div style="display: flex; align-items: center;"><a href="https://t.me/bugzorc" target="_blank"><img src="images/icons/telegram.png"></a></div>
-                    </div>
-                </div>
-                <div class="anime"><img src="images/statics/animedance.gif"></div>
-            </div>
-        </div>
-        <!--end-->
-    <script src="javascript/music.js"></script>
     </div>
 </body>
 </html>

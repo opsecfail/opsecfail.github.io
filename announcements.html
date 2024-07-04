@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
     <title>announcements</title>
-    <meta name="description" content="this is the announcements page where I shall send anything relevant to the reader">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/announcements.css">
 </head>
 <body>
     <div class="container">
-
         <div class="header">
             <span>A</span>
             <span>N</span>
@@ -28,35 +26,44 @@
             <span>S</span>
         </div>
 
-        <div class="chain"></div>
-
-        <div class="announcements">
-
+        <div class="announcement_column">
+            <div class="announcement_post">
+                <p>I left infosec, so what about this site? Don't worry, the site remains online regardless BUT, I shall not update it anymore or write blogs BUT, if you send your blog, I would be happy to add it here</p>
+            </div>
+            <div class="announcement_post">
+                <p>introducing OpsecFailures V.2: new theme, contributers board, minimize javascript usages, responsive css. Also added hidden buttons in the site....</p>
+            </div>
+            <div class="announcement_post">
+                <p>removed javascript for loading the profiles, html more faster I guess, but still works the same way</p>
+            </div>
+            <div class="announcement_post">
+                <p>many ask me why I write about opsec failures, while I don't care about mine? am a law abiding citizen :))</p>
+            </div>
+            <div class="announcement_post">
+                <p>slangs removed, posts are now more summarising, blocks have been broken down to paragraphs</p>
+            </div>
+            <div class="announcement_post">
+                <p>If you don't understand the accro names, check <a href="accro.html">/accro.html</a></p>
+            </div>
+            <div class="announcement_post">
+                <p>Incase of any errors don't hesitate to message me</p>
+            </div>
+            <div class="announcement_post">
+                <p>If you wanna write an OpSec Failure(OSF) about anyone, check /contribute.html</p>
+            </div>
+            <div class="announcement_post">
+                <p>The discord is just a hangout with ma friends</p>
+            </div>
+            <div class="announcement_post">
+                <p>Full mobile support droppin' on SATURDAY 30/3/2024</p>
+            </div>
+            <div class="announcement_post">
+                <p>SITE LAAAUNNCHED, ENJOY</p>
+            </div>
+            <div class="announcement_post">
+                <p>Site launch postponed by 50 hours, had a busy day today</p>
+            </div>
         </div>
-        <script>
-            // Function to fetch and display announcements from JSON
-            function displayAnnouncements() {
-                fetch('storage/other/announcements.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        const announcementsDiv = document.querySelector('.announcements');
-                        announcementsDiv.innerHTML = ''; // Clear previous announcements
-                        data.forEach((announcement, index) => {
-                            const announcementDiv = document.createElement('div');
-                            announcementDiv.classList.add('announcement');
-                            announcementDiv.textContent = announcement.announcement;
-                            announcementsDiv.appendChild(announcementDiv);
-                        });
-                    })
-                    .catch(error => console.error('Error fetching announcements:', error));
-            }
-        
-            // Display announcements initially
-            displayAnnouncements();
-        
-            // Update announcements every 60 seconds (if new ones are added)
-            setInterval(displayAnnouncements, 60000); // Adjust interval as needed
-        </script>
     </div>
 </body>
 </html>

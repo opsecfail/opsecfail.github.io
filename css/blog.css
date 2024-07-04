@@ -1,0 +1,107 @@
+.header {
+    height: 100px !important;
+}
+
+.blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background-color: transparent !important;
+}
+
+.brief {
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #11a002;
+    width: 25%;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+.yap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75%;
+    margin-left: 15px;
+    background-color: transparent !important;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent !important;
+    align-items: center;
+}
+
+.details div {
+    border-bottom: 2px solid #11a002;
+    width: 190px;
+}
+
+.pfp {
+    width: fit-content;
+    border: none !important;
+    margin-bottom: 5px;
+}
+
+.pfp img{
+    width: 190px;
+    height: 190px;
+}
+
+.OSF {
+    padding: 13px;
+}
+
+.story {
+    word-wrap: break-word;
+    border: 1px solid #11a002;
+    padding: 3px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+span#comrade, span#poster {
+    color: #d8b90b;
+}
+
+.chain {
+    width: 60%;
+    height: 28px;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: 2px solid #11a002;
+    border-left: 2px solid #11a002;
+    border-style: dotted;
+    background-color: transparent !important;
+}
+
+.links {
+    border: 1px solid #11a002;
+    padding: 3px;
+}
+@media only screen and (max-width: 967px) {
+
+    /*divs to be removed*/
+    .logo, .anonbanner, .tables, .statistics{
+        display: none;
+    }
+    .site_name {
+        overflow: visible;
+    }
+    .blog {
+        width: 100%;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .brief, .yap {
+        width: auto;
+        border-right: none;
+    }
+    .story {
+        height: 100% !important;
+        max-height: 100%;
+    }
+ }

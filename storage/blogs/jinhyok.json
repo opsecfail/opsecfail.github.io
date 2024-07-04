@@ -1,0 +1,10 @@
+{
+    "pfp": "images/victims/jin.jpeg",
+    "nickname": "JINHYOK",
+    "details": " a North Korean programmer and hacker.",
+    "poster": "bugzorc",
+    "osf": ["ACC", "UGE"],
+    "verified": "verified",
+    "blog": "Never make a connection between your cybercriminal alias and your legitimate identity. Back to our man Jin Hyok. He blew his cover by using the SAME EMAIL ACCOUNTS for both his commercial work and his cybercrime activities. Consequently, he was linked to the Lazarus Group and implicated in high-profile hacks such as those targeting Sony, the Central Bank of Bangladesh, and WannaCry. His use of similar emails, like Gmail and Hotmail, left a clear trail for law enforcement to follow. These accounts were utilized for spear-phishing, reconnaissance, and researching hacking methods. One of the emails was even used to target victims at Sony and Bangladesh Bank. In summary, failing to keep his identities separate got Jin Hyok caught. What we learned? It's crucial to maintain strict separation between online personas and real-life identities, and avoid using easily traceable email services for illicit activities.", 
+    "links": ["https://www.darkreading.com/threat-intelligence/the-opsec-fail-that-helped-unmask-a-north-korean-state-hacker"]
+}
